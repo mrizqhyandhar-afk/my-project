@@ -1,0 +1,1305 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #164e63;
+    background: #f0f9ff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background: #0284c7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #bae6fd;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(2, 132, 199, 0.95),
+            rgba(56, 189, 248, 0.95)
+        );
+}
+
+.hero-content {
+    max-width: 900px;
+    color: white;
+}
+
+.small-title {
+    color: #e0f2fe;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e0f2fe;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+.button-outline {
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #075985;
+    color: white;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .nav-menu {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================
+   PAGE SECTION
+========================= */
+
+.page-section {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 75vh;
+    padding: 90px 20px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    color: #0284c7;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+
+/* =========================
+   KARTU FOTO
+========================= */
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(14, 116, 144, 0.12);
+}
+
+.profile-card img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   TEKS PROFIL
+========================= */
+
+.profile-text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.profile-text p {
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   BIODATA
+========================= */
+
+.biodata {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #bae6fd;
+}
+
+.biodata p {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE PROFILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        max-width: 400px;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+/* =========================
+   EDUCATION CARD
+========================= */
+
+.education-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(14, 116, 144, 0.12);
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 25px;
+
+    align-items: start;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   HOVER EDUCATION
+========================= */
+
+.education-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(14, 116, 144, 0.18);
+}
+
+
+/* =========================
+   ICON PENDIDIKAN
+========================= */
+
+.education-icon {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: #e0f2fe;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+
+/* =========================
+   TAHUN PENDIDIKAN
+========================= */
+
+.education-year {
+    color: #0284c7;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   JUDUL PENDIDIKAN
+========================= */
+
+.education-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 5px;
+
+    color: #164e63;
+}
+
+
+/* =========================
+   SUBJUDUL PENDIDIKAN
+========================= */
+
+.education-card h4 {
+    color: #0284c7;
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   TEKS PENDIDIKAN
+========================= */
+
+.education-card p {
+    margin-bottom: 12px;
+
+    color: #475569;
+}
+
+
+/* =========================
+   INFORMASI PENDIDIKAN
+========================= */
+
+.education-info {
+    max-width: 900px;
+
+    margin: 60px auto 0;
+
+    text-align: center;
+}
+
+.education-info h2 {
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    color: #164e63;
+}
+
+
+/* =========================
+   BOX INFORMASI
+========================= */
+
+.info-box {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+.info-box div {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(14, 116, 144, 0.10);
+
+    border-left: 4px solid #0284c7;
+}
+
+.info-box strong {
+    display: block;
+
+    color: #0284c7;
+
+    margin-bottom: 5px;
+}
+
+.info-box span {
+    color: #475569;
+}
+
+
+/* =========================
+   RESPONSIVE EDUCATION
+========================= */
+
+@media (max-width: 600px) {
+
+    .education-card {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 25px;
+    }
+
+    .education-icon {
+        margin: auto;
+    }
+
+    .education-card h3 {
+        font-size: 22px;
+    }
+
+    .education-card h4 {
+        font-size: 16px;
+    }
+
+    .education-card p {
+        font-size: 15px;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(14, 116, 144, 0.12);
+
+    display: flex;
+
+    gap: 20px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    min-width: 60px;
+
+    height: 60px;
+
+    background: #e0f2fe;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.skill-content {
+    flex: 1;
+}
+
+.skill-name {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.skill-name h3 {
+    font-size: 20px;
+}
+
+.skill-name span {
+    color: #0284c7;
+
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+
+    height: 10px;
+
+    background: #e0f2fe;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 12px;
+}
+
+.skill-progress {
+    height: 100%;
+
+    background: #38bdf8;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   PERSENTASE SKILL
+========================= */
+
+.skill-progress.html {
+    width: 10%;
+}
+
+.skill-progress.css {
+    width: 10%;
+}
+
+.skill-progress.cpp {
+    width: 10%;
+}
+
+.skill-progress.network {
+    width: 10%;
+}
+
+.skill-progress.git {
+    width: 10%;
+}
+
+.skill-progress.github {
+    width: 10%;
+}
+
+.skill-progress.database {
+    width: 10%;
+}
+
+.skill-progress.algorithm {
+    width: 10%;
+}
+
+
+.skill-content p {
+    font-size: 14px;
+
+    color: #475569;
+}
+
+
+/* =========================
+   RESPONSIVE SKILLS
+========================= */
+
+@media (max-width: 800px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .skill-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .skill-icon {
+        margin: auto;
+    }
+
+    .skill-name {
+        text-align: left;
+    }
+
+}
+
+
+/* =========================
+PROJECTS
+========================= */
+
+.project-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.project-card {
+    position: relative;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(14, 116, 144, 0.12);
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-number {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    color: #e0f2fe;
+}
+
+.project-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e0f2fe;
+
+    border-radius: 15px;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.project-card h3 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.project-card p {
+    color: #475569;
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.project-tech span {
+    background: #e0f2fe;
+
+    color: #0284c7;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+RESPONSIVE PROJECT
+========================= */
+
+@media (max-width: 700px) {
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+CONTACT
+========================= */
+
+.contact-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.contact-intro {
+    padding: 20px;
+}
+
+.contact-intro h3 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.contact-intro p {
+    margin-bottom: 18px;
+
+    color: #475569;
+}
+
+.contact-cards {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contact-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(14, 116, 144, 0.10);
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    background: #e0f2fe;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.contact-card h3 {
+    margin-bottom: 3px;
+}
+
+.contact-card p {
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+RESPONSIVE CONTACT
+========================= */
+
+@media (max-width: 750px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   JAVASCRIPT FEATURES
+========================= */
+
+.theme-toggle {
+    position: fixed;
+    right: 25px;
+    bottom: 85px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #0284c7;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+    z-index: 2000;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #075985;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: 0.3s;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+}
+
+/* FORM KONTAK */
+
+.contact-form {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(14, 116, 144, 0.10);
+}
+
+.contact-form h3 {
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #bae6fd;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2,132,199,0.12);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-mode .page-section,
+body.dark-mode .profile-card,
+body.dark-mode .education-card,
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .info-box,
+body.dark-mode .contact-card,
+body.dark-mode .contact-form {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+body.dark-mode .section-title h2,
+body.dark-mode .profile-card h3,
+body.dark-mode .education-card h3,
+body.dark-mode .skill-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .contact-card h3,
+body.dark-mode .contact-form h3 {
+    color: #e0f2fe;
+}
+
+body.dark-mode .profile-text,
+body.dark-mode .biodata,
+body.dark-mode .education-info,
+body.dark-mode .skill-content p,
+body.dark-mode .project-tech,
+body.dark-mode .contact-intro p,
+body.dark-mode .contact-card p,
+body.dark-mode .info-box {
+    color: #cbd5e1;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+body.dark-mode footer {
+    background: #020617;
+}
+
+/* MOBILE MENU */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        position: relative;
+        flex-direction: row;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 18px 20px;
+        background: #0284c7;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    .nav-menu.show-menu {
+        display: flex;
+    }
+
+    .theme-toggle {
+        right: 18px;
+        bottom: 78px;
+    }
+
+    .back-to-top {
+        right: 18px;
+        bottom: 20px;
+    }
+}
+/* =========================
+   BINTANG JATUH 🌠✨
+========================= */
+
+.shooting-star {
+    position: fixed;
+
+    background: white;
+    border-radius: 50%;
+
+    z-index: 9999;
+    pointer-events: none;
+
+    box-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px #38bdf8,
+        0 0 35px #0ea5e9;
+
+    transform: rotate(45deg);
+
+    animation-name: shootingStar;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+/* Ekor bintang */
+
+.shooting-star::before {
+
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+
+    width: 130px;
+    height: 4px;
+
+    transform: translateY(-50%);
+
+    background: linear-gradient(
+        to left,
+        white,
+        #38bdf8,
+        rgba(56, 189, 248, 0.5),
+        transparent
+    );
+
+    border-radius: 50%;
+
+    filter: blur(1px);
+}
+
+
+/* Cahaya tambahan */
+
+.shooting-star::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: white;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px white,
+        0 0 20px #38bdf8,
+        0 0 35px #0ea5e9;
+}
+
+
+/* Animasi */
+
+@keyframes shootingStar {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translate(0, 0)
+            rotate(45deg)
+            scale(0.7);
+    }
+
+    10% {
+
+        opacity: 1;
+    }
+
+    70% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translate(-450px, 450px)
+            rotate(45deg)
+            scale(1.2);
+    }
+}
