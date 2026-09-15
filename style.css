@@ -964,6 +964,7 @@ RESPONSIVE CONTACT
         grid-template-columns: 1fr;
     }
 
+<<<<<<< HEAD
 }
 
 /* =========================
@@ -1302,4 +1303,6 @@ body.dark-mode footer {
             rotate(45deg)
             scale(1.2);
     }
+=======
+>>>>>>> f246294ff6a33a2e112d54fd45f04e6e31b05259
 }
